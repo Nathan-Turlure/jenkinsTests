@@ -2,14 +2,19 @@ pipeline {
     agent any
 
     stages {
+        stage('Checkout') {
+            steps {
+                git 'https://votre-repo-git-url.git'
+            }
+        }
         stage('Install Dependencies') {
             steps {
-                bat 'composer install'
+                sh 'composer install'
             }
         }
         stage('Run Tests') {
             steps {
-                bat 'vendor/bin/phpunit'
+                sh 'vendor/bin/phpunit'
             }
         }
     }
