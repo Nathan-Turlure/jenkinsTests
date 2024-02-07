@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://votre-repo-git-url.git'
+                git 'https://github.com/Nathan-Turlure/jenkinsTests'
             }
         }
         stage('Install Dependencies') {
