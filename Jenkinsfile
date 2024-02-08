@@ -11,7 +11,7 @@ pipeline {
         }
         stage('Run Tests') {
             steps {
-                bat 'vendor\\bin\\phpunit --log-junit=rapports/test-results.xml'
+                bat 'vendor/bin/phpunit --log-junit=rapports/test-results.xml'
             }
         }
     }
