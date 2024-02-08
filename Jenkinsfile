@@ -12,5 +12,10 @@ pipeline {
                 bat 'vendor\\bin\\phpunit CalculatorTest.php'
             }
         }
+        post {
+            always {
+                junit 'rapports/*.xml'
+            }
+        }
     }
 }
