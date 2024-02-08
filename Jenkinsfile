@@ -9,7 +9,7 @@ pipeline {
         }
         stage('Run Tests') {
             steps {
-                bat 'vendor\\bin\\phpunit'
+                bat 'vendor\\bin\\phpunit CalculatorTest.php'
             }
         }
     }

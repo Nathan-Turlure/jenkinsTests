@@ -3,7 +3,7 @@
 // CalculatorTest.php
 use PHPUnit\Framework\TestCase;
 
-require_once 'Calculgit ator.php';
+require_once 'Calculator.php';
 
 class CalculatorTest extends TestCase {
     public function testAdd() {
