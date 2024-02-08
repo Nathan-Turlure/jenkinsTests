@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Run Tests') {
             steps {
-                sh 'vendor/bin/phpunit'
+                bat 'vendor\\bin\\phpunit'
             }
         }
     }
